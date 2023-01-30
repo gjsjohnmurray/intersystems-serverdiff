@@ -9,7 +9,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
 	// Get the main extension exported API
 	const objectScriptExtId = 'intersystems-community.vscode-objectscript';
-	const objectScriptMinVer = '2.4.2-beta.7';
+	const objectScriptMinVer = '2.4.2-beta.8';
 	const objectScriptExt = extensions.getExtension(objectScriptExtId);
 	if (!objectScriptExt) {
 		window.showErrorMessage(`${myIdentity} requires the '${objectScriptExtId}' extension installed and enabled.`);
