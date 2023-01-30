@@ -1,9 +1,5 @@
 # Change Log
 
-All notable changes to the "intersystems-serverdiff" extension will be documented in this file.
-
-Check [Keep a Changelog](http://keepachangelog.com/) for recommendations on how to structure this file.
-
-## [Unreleased]
+## [0.0.1] 30-Jan-2023
 
 - Initial release

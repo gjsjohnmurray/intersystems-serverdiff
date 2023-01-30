@@ -27,11 +27,7 @@
     "intersystems-community.vscode-objectscript"
   ],
   "activationEvents": [
-    "onLanguage:objectscript",
-    "onLanguage:objectscript-class",
-    "onLanguage:objectscript-int",
-    "onLanguage:objectscript-macros",
-    "onFileSystem:isfs"
+    "onStartupFinished"
   ],
   "main": "./dist/extension.js",
   "scripts": {
@@ -44,6 +40,9 @@
     "pretest": "npm run compile-tests && npm run compile && npm run lint",
     "lint": "eslint src --ext ts",
     "test": "node ./out/test/runTest.js"
+  },
+  "dependencies": {
+    "json5": "^2.2.3"
   },
   "devDependencies": {
     "@types/vscode": "^1.74.0",
