@@ -3,7 +3,7 @@
   "displayName": "InterSystems ServerDiff",
   "description": "Show differences between current document and server version",
   "publisher": "georgejames",
-  "version": "0.0.5",
+  "version": "0.0.7",
   "license": "MIT",
   "engines": {
     "vscode": "^1.75.0"
