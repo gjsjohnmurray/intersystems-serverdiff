@@ -4,6 +4,8 @@ const JSON5 = require('json5');
 
 export async function activate(context: ExtensionContext): Promise<void> {
 
+	console.log(`Now activating ${context.extension.id}`);
+
 	const { displayName, enabledApiProposals }= context.extension.packageJSON;
 	const myIdentity = `${displayName} (${context.extension.id})`;
 
@@ -40,7 +42,7 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
 	const REQUIRED_PROPOSAL = 'quickDiffProvider';
 
-	if (!(enabledApiProposals as Array<string>).includes(REQUIRED_PROPOSAL)) {
+	if (!enabledApiProposals || !(enabledApiProposals as Array<string>).includes(REQUIRED_PROPOSAL)) {
 		window.showWarningMessage<MessageItem>(
 				`${myIdentity} must be reinstalled from a VSIX built with the '${REQUIRED_PROPOSAL}' API proposal enabled. Do this now?`,
 				{modal: true, detail: 'A window reload will be triggered to activate the new version.'},
