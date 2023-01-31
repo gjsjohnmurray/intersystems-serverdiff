@@ -1,5 +1,7 @@
 # How to package this self-upgrading extension
 
+0. Update CHANGELOG.md
+
 1. Review the contents of `package.json`
     - `version` should have an odd number in the third part (maintenance), for example `0.0.1`
     - `enableApiProposals` should be:
