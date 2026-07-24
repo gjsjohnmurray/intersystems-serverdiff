@@ -1,5 +1,10 @@
 # Change Log
 
+## [0.0.7] 24-Jul-2026
+
+- Fix GitHub link.
+- Update dependencies.
+
 ## [0.0.5] 31-Jan-2023
 
 - Fix activation failure.
