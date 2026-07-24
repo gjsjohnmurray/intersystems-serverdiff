@@ -44,8 +44,8 @@ export async function activate(context: ExtensionContext): Promise<void> {
 
 	if (!enabledApiProposals || !(enabledApiProposals as Array<string>).includes(REQUIRED_PROPOSAL)) {
 		window.showWarningMessage<MessageItem>(
-				`${myIdentity} must be reinstalled from a VSIX built with the '${REQUIRED_PROPOSAL}' API proposal enabled. Do this now?`,
-				{modal: true, detail: 'A window reload will be triggered to activate the new version.'},
+				`${myIdentity}`,
+				{modal: true, detail: `This extension must be reinstalled from a VSIX built with the '${REQUIRED_PROPOSAL}' API proposal enabled. Do this now? A window reload will be triggered to activate the new version.`},
 				{title: 'Yes'},
 				{title: 'No', isCloseAffordance: true}
 			).then(async (answer) => {
